@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Div padre para poder centrar "page" con la propiedad flex*/
+.page0{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0F0F0F;
+  min-height: 100vh;
+}
+.page{
+  width: 1100px; 
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.displayFlex{
+  display: flex;
+}
+
+.whiteColor{
+  color: #fff;
+  font-weight: 700;
+}
+
+*{
+  box-sizing: border-box;
+}
+#whiteColor{
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (width <= 1200px){
+  .page{
+    width: 100%;
+    padding: 30px;
+  }
+}

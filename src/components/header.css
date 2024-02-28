@@ -1,0 +1,128 @@
+/*Menu hamburguesa*/
+
+.bars__menu{
+    display: none;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    cursor: pointer;
+    transition: all 300ms;
+    z-index: 5;
+    }
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    transform-origin: 0px 100%;
+    border-radius: 1px;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(0px, -3px); 
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(0px, 3px);
+}
+/*Menu hamburguesa*/
+
+#displayFlex{
+    display: flex;
+    top: 0px;
+
+}
+
+.header{
+    color: #FFFFFF;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h3{
+    font-family: "Kode Mono", monospace;
+    font-weight: 500;
+}
+.header__links{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 30px;
+    color: #9f9f9f;
+    height: 100%;
+}
+    .header__links p, .header__links .header__links__link{
+        display: flex;
+        transition: .3s;
+        align-items: center;
+        font-weight: 500;
+        text-decoration: none;
+        color: #9f9f9f;
+
+    }
+    .header__links p:hover, .header__links .header__links__link:hover{
+        color: #fff;
+        cursor: pointer;
+    }
+
+.header__contact{
+    display: flex;
+    background-color: #323232;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.header__contact:hover{
+    background-color: #fff;
+    color: #000;
+}
+*{
+    transition: .3s all;
+}
+@media (width <= 800px){
+    .header__links{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        top: -800px;
+        left: 0;
+        z-index: 1;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #0F0F0F;
+    }
+    .header__links__link{
+        display: flex;
+        height: 50px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header__contact{
+        display: none;
+        position: absolute;
+    }
+    .bars__menu{
+        display:inline
+    }
+}

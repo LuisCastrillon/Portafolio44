@@ -1,0 +1,138 @@
+.contact{
+    display: flex;
+    margin-top: 80px;
+    gap: 40px;
+}
+
+.contact__ContactInf{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact__ContactInf h3{
+    color: #878787;
+    font-weight: 500;
+}
+.contact__ContactInf__card {
+    display: flex   ;
+    gap: 20px;
+}
+.contact__ContactInf__card__imgCnt{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #202020, #151515);
+    border: 1px solid #32323258;
+    border-radius: 8px;
+}
+.contact__ContactInf__card__imgCnt img{
+    width: 30px;
+    height: 30px;
+    
+}
+.contact__ContactInf__card__inf{
+    display: flex;
+    flex-direction: column;
+}
+.contact__ContactInf__card__inf p{
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    flex-grow: 1;
+
+}
+.contact__ContactInf__card__inf--color{
+    color: #878787;
+    justify-content: end;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    height: inherit;
+    background: linear-gradient(to bottom right, #202020, #151515);
+    border: 1px solid #32323258;
+    border-radius: 20px;
+    padding: 40px
+}
+.contact__form h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.contact__form--input{
+    margin-bottom: 20px;
+    height: 40px;
+    background: linear-gradient(to bottom right, #2d2d2d, #1a1a1a);
+    border-radius: 8px;
+    border:none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+}
+.contact__form--input--height{
+    height: 80px;
+}
+.contact__form--button{
+    height: 40px;
+    background: linear-gradient(to bottom right, #2d2d2d, #1a1a1a);
+    border:1px solid transparent;
+    border-radius: 8px;
+    border:none;
+    color: #bdbdbd;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+.contact__form--button:hover{
+    border:1px solid #878787;
+    color: #fff;
+    cursor: pointer;
+}
+.icon1--left{
+    background-image: url('../assets/icon2.png');
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    width: 50px;
+    height: 80px;  
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inputEmpty{
+    border:1px solid red;
+}
+#sended{
+    border:1px solid green;
+
+}
+
+@media (width <= 1200px){
+    .contact{
+        flex-direction: column;
+    }
+    .contact__ContactInf{
+        width: 100%;
+    }
+}
+@media (width <= 500px){
+    .contact__ContactInf__card{
+        flex-direction: column;
+        gap:5px;
+        align-items: center;
+    }
+    .contact__ContactInf__card__inf p{
+        text-align: center;
+    }
+    .contact__form h1{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+}
